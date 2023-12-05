@@ -42,8 +42,8 @@ public class ingresodatos extends AppCompatActivity {
                 databaseReference.child("Mensaje").setValue(texto.getText().toString());
                 databaseReference.child("Nombre").setValue(nombre.getText().toString());
                 databaseReference.child("Apellido").setValue(apellido.getText().toString());
-                Toast.makeText(getApplicationContext(), "Mensaje enviado exitosamente", Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(), "Consulta tu servidor MQTT y la base de datos de Firebase", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Usuario ingresado correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Conexion perdida", Toast.LENGTH_LONG).show();
 
             }
         });
