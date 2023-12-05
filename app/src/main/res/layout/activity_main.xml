@@ -70,7 +70,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/txtIngreso"
             app:layout_constraintVertical_bias="0.5">
 
             <ImageView
@@ -82,7 +82,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtIngreso"
             android:layout_width="271dp"
             android:layout_height="71dp"
             android:fontFamily="@font/astloch_bold"
