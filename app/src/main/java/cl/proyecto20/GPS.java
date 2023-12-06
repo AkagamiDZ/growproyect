@@ -72,19 +72,7 @@ public class GPS extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(Lugares1).title("Konka Grow Shop-Puren"));
         mMap.addMarker(new MarkerOptions().position(Lugares2).title("A PLANTAR GROWSHOP"));
 
-        String ubicacion1 = getIntent().getStringExtra("Ubicacion1");
-        String[] partes1 = ubicacion1.split(",");
-        String latitud1 = partes1[0];
-        String longitud1 = partes1[1];
-        double lt1 = Double.parseDouble(latitud1);
-        double lg1 = Double.parseDouble(longitud1);
 
-        LatLng ubi1 = new LatLng(lt1, lg1);
-        mMap.addMarker(new MarkerOptions()
-                .position(ubi1)
-                .title("Ubicacion 1"));
-
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubi1, 10));
 
 
     }

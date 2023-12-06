@@ -8,6 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class ingresodatos extends AppCompatActivity {
 
@@ -21,7 +25,7 @@ public class ingresodatos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ingresodatos);
-        Intent intent = new Intent(this, ingresodatos.class);
+        Intent intent = new Intent(this, GPS.class);
         btnmap = (Button) findViewById(R.id.btnGPS);
 
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
@@ -39,7 +43,7 @@ public class ingresodatos extends AppCompatActivity {
 
 
 
-                databaseReference.child("Mensaje").setValue(texto.getText().toString());
+
                 databaseReference.child("Nombre").setValue(nombre.getText().toString());
                 databaseReference.child("Apellido").setValue(apellido.getText().toString());
                 Toast.makeText(getApplicationContext(), "Usuario ingresado correctamente", Toast.LENGTH_SHORT).show();
