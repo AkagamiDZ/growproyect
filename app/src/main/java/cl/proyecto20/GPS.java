@@ -72,6 +72,10 @@ public class GPS extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(Lugares1).title("Konka Grow Shop-Puren"));
         mMap.addMarker(new MarkerOptions().position(Lugares2).title("A PLANTAR GROWSHOP"));
 
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugares2));
+        mMap.setMinZoomPreference(4.0F);
+        mMap.setMaxZoomPreference(20.0f);
+
 
 
 
